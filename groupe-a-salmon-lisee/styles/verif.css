@@ -1,0 +1,54 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+  }
+     
+    #button{
+      padding-left: 0px;
+      margin: 0px;
+      justify-content: left;
+    }
+    #button > div {
+      padding: 1%;
+      margin: 10px;
+    }
+
+  
+  .cart-sum{
+    background-color: #ccc;
+    justify-content: left;
+    margin: auto;
+    padding: 20px;
+  }
+  
+  .cart-form{
+    justify-content: right;
+    margin:auto;
+    padding: 20px;
+    background-color: #ccc;
+  }
+  
+  
+  input[type=text]{
+    width: 100%;
+    margin-bottom: 20x;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  label{
+    margin-bottom: 10px;
+    display: block;
+    font-size: 17px;
+  }
+  
+  h3{
+    font-size: 20px;
+  }
+  
+  /* Fin du CSS de la page panier */
+  
+
+ 
