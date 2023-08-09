@@ -1,0 +1,225 @@
+body{
+    background-color: white;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    position: relative;
+}
+
+.footer{
+    background-color: black;
+
+    left:0;
+    bottom:0;
+    width: 100%;
+    font-family: Open Sans;
+    font-size: 20px;
+    color:rgb(255, 255, 255);
+    text-align: center;
+
+}
+
+.dot {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+  
+  
+.dot input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+  
+  
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+}
+  
+  
+.dot:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+  
+  
+.dot input:checked ~ .checkmark {
+    background-color: #2196F3;
+}
+  
+  
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+  
+  
+.dot input:checked ~ .checkmark:after {
+    display: block;
+}
+  
+  
+.dot .checkmark:after {
+    top: 9px;
+    left: 9px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: white;
+}
+  
+#red{     
+    background-color: red;
+}
+#blue{
+    background-color: blue;
+}
+#violet{
+    background-color: violet;
+}
+#green{
+    background-color: green;
+}
+  
+
+.dropbtn {
+    background-color: darkred;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+  
+.dropbtn:hover, .dropbtn:focus {
+    background-color: rgb(88, 0, 0);
+}
+  
+
+.a04{
+    width: 40px;
+}
+
+
+
+.flex-container{
+    display :flex;
+    flex-wrap: wrap;
+    justify-content:center;
+}
+
+.flex-container> div{
+    margin:1px;
+    padding:15px;
+    font-size: 30px;
+    flex-direction: column;
+}
+
+
+.image {
+    display: block;
+    width: 300px;
+    height: auto;
+}
+
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    
+}
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(10, 2, 2);
+    -webkit-transition: .50s;
+    transition: .50s;
+}
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .50s;
+    transition: .50s;
+
+}
+input:checked + .slider {
+    background-color: darkred;
+
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+.slider.round {
+    border-radius: 360px;
+}
+  
+.slider.round:before {
+    border-radius: 50%;
+}
+
+
+.text-popup {
+    display: none;
+}
+
+#topbtn{
+    display: none;
+    position:fixed;
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: rgb(44,44,44); /* Set a background color */
+    color: rgb(0, 0, 0); /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    border-radius: 25%;
+    width: 5%;
+    height: 10%;
+    
+}
+
+  
+#topbtn:hover{
+    background-color: rgb(169, 26, 26);
+    width: 5%;
+    height: 10%;
+    opacity: 70%;
+}
+  
